@@ -1,0 +1,11 @@
+使用HttpClient和DefaultHttpClient:
+    在build.gradle(Module: app)中的android内添加 useLibrary 'org.apache.http.legacy'：
+            android {
+                useLibrary 'org.apache.http.legacy'
+            }
+            
+使用Gson：
+    在build.gradle(Module: app)中的dependencies内添加 implementation 'com.google.code.gson:gson:2.8.4'：
+            dependencies {
+                implementation 'com.google.code.gson:gson:2.8.4'
+            }
