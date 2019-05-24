@@ -9,3 +9,9 @@
             dependencies {
                 implementation 'com.google.code.gson:gson:2.8.4'
             }
+            
+cannot resolve symbol 'NonNull'
+    在build.gradle(Module: app)中的dependencies内添加 implementation 'com.android.support:support-annotations:+'：
+            dependencies {
+                implementation 'com.android.support:support-annotations:+'
+            }
