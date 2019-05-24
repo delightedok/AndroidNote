@@ -1,0 +1,13 @@
+Cleartext traffic not permitted:
+    在res/xml/下添加一个xml文件：network_security_config.xml
+            内容：
+            <?xml version="1.0" encoding="utf-8"?>
+            <network-security-config>
+                <base-config cleartextTrafficPermitted="true" />
+            </network-security-config>
+    在AndroidManifest.xml中的application标签下添加属性：
+            android:networkSecurityConfig="@xml/network_security_config"
+
+java.lang.SecurityException: Permission denied:
+    在AndroidManifest.xml中的manifest标签下添加：
+            <uses-permission android:name="android.permission.INTERNET"></uses-permission>
